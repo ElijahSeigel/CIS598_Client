@@ -80,12 +80,7 @@ export default class Game{
 		
 		//set up event handlers
 		document.getElementById('canvas').addEventListener("click", this.handleInput);
-		//taken from: https://coderwall.com/p/lyw2ug/how-to-prevent-native-scrolling-on-mobile-browsers
-		document.body.addEventListener("touchmove", function(event) {
-			event.preventDefault();
-			event.stopPropagation();
-			}, false);
-		
+
 		//initial render
 		this.render();
 		
