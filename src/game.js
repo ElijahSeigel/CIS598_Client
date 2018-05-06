@@ -80,7 +80,7 @@ export default class Game{
 		
 		//set up event handlers
 		document.getElementById('canvas').addEventListener("click", this.handleInput);
-
+		document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 		//initial render
 		this.render();
 		
