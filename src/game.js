@@ -93,6 +93,7 @@ export default class Game{
 	handleInput(event){
 		this.X = event.clientX;
 		this.Y = event.clientY;
+		
 	}//end handleInput
 	
 	preventMotion(event)
