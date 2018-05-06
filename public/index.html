@@ -24,7 +24,7 @@
   <style>
 	canvas{display: block;}
   </style>
-  <body class="no-scroll">
+  <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -36,15 +36,15 @@
 			opacity: 1; /* Firefox */
 		}
 
-		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		::-ms-input-placeholder { /* Internet Explorer 10-11 */
 		   color: rgb(174,214,241);
 		}
 
 		::-ms-input-placeholder { /* Microsoft Edge */
 		   color: rgb(174,214,241);
 		}
-		.no-scroll {
-			overflow-y: hidden;
+		html, body {
+			overflow: hidden;
 			position: relative;
 			
 		}		
