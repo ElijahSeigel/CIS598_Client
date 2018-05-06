@@ -53,7 +53,7 @@ export default class Join{
 		//input field
 		input.hidden = false;
 		//input.style = "text-transform:uppercase; text-align: center; background-color: #1B4F72; color: #3498db; position:fixed; top:"+8*height/18+"px; left:"+width/16+"px; width:"+7*width/8+"px; height:"+3*height/18+"px; font:"+font_size+"px courier;";
-		input.style = "text-transform:uppercase; text-align: center; background-color: #1B4F72; color: #3498db; position:absolute; top:"+8*height/18+"px; left:"+width/16+"px; width: 81.25%; height:"+3*height/20+"px; font:"+font_size+"px courier;";
+		input.style = "text-transform:uppercase; text-align: center; background-color: #1B4F72; color: #3498db; position:absolute; top:"+8*height/18+"px; left:"+width/16+"px; width: 20%; height:"+3*height/20+"px; font:"+font_size+"px courier;";
 			
 		//button
 		ctx.fillStyle = 'rgb(27,79,114)';
