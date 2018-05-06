@@ -130,7 +130,7 @@ export default class Game{
 				if(this.state === 5){
 					this.roundTimer = 18000;
 					this.code = result[1];
-					this.song = 2;//result[2];
+					this.song = result[2];
 					//console.log('youtube-audio-'+result[2]);
 					document.getElementById('youtube-audio-'+result[2]).click();
 				}
