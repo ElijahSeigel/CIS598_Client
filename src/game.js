@@ -74,13 +74,15 @@ export default class Game{
 		
 		//Bind class functions
 		this.handleInput = this.handleInput.bind(this);
+		this.preventMotion = this.preventMotion.bind(this);
 		this.update = this.update.bind(this);
 		this.render = this.render.bind(this);
 		this.loop = this.loop.bind(this);
 		
 		//set up event handlers
 		document.getElementById('canvas').addEventListener("click", this.handleInput);
-		document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+		window.addEventListener("scroll", preventMotion, false);
+		window.addEventListener("touchmove", preventMotion, false);
 		//initial render
 		this.render();
 		
@@ -92,6 +94,13 @@ export default class Game{
 		this.X = event.clientX;
 		this.Y = event.clientY;
 	}//end handleInput
+	
+	preventMotion(event)
+	{
+		window.scrollTo(0, 0);
+		event.preventDefault();
+		event.stopPropagation();
+	}
 	
 	update(){
 		switch(this.state){
