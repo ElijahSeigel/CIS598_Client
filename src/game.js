@@ -81,8 +81,8 @@ export default class Game{
 		
 		//set up event handlers
 		document.getElementById('canvas').addEventListener("click", this.handleInput);
-		window.addEventListener("scroll", this.preventMotion, false);
-		window.addEventListener("touchmove", this.preventMotion, false);
+		//window.addEventListener("scroll", this.preventMotion, false);
+		//window.addEventListener("touchmove", this.preventMotion, false);
 		//initial render
 		this.render();
 		
