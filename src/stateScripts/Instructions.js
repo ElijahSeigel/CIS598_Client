@@ -8,7 +8,7 @@ export default class Instructions{
 	}//end constructor
 	
 	update(x,y, width, height){
-			if(x>-1 && y>-1)
+			if(x>-1 && y>-1){
 			return 0;
 			}//end if click
 		return 12;
