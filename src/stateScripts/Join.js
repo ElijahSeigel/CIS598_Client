@@ -17,7 +17,7 @@ export default class Join{
 		   &&y>(12*height/18)
 		   &&y<(15*height/18)){
 			//send room name to server
-			if(input.value.length<=6 && input.value.match(/[A-Za-z]/)){
+			if(input.value.length<=6 && input.value.match(/^[A-Za-z]+$/)){
 				socket.emit('new_room', input.value.toUpperCase());
 			}else{
 				input.value = '';
